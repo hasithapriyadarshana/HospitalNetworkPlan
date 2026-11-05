@@ -1,0 +1,62 @@
+en
+conf t
+Vlan 10
+name REC 
+VLAN 20
+Name IT
+Vlan 30
+Name sec 
+Vlan 40 
+Name Hr
+Vlan 50
+Name Ad
+Vlan 60  
+Name Ar
+Vlan 70
+Name MT
+VLAN 150
+Name IP
+VLAN 80
+Name EM
+VLAN 90
+Name X-Ray
+VLAN 100
+Name Doc
+VLAN 110
+Name Lab
+VLAN 120
+Name ICU
+VLAN 130
+Name OP
+VLAN 140
+Name Nur
+Vlan 160
+Name PHA 
+Vlan 170
+Name pt
+vlan 180
+name server
+
+int vlan 10
+ip add 192.168.10.1 255.255.255.0
+no sh
+exit
+
+int vlan 20
+ip add 192.168.20.1 255.255.255.0
+no sh
+exit
+int vlan 30
+ip add 192.168.30.1 255.255.255.0
+no sh
+exit
+int vlan 40
+ip add 192.168.40.1 255.255.255.0
+no sh
+exit
+int vlan 50
+ip add 192.168.50.1 255.255.255.0
+no sh
+exit
+
+ 

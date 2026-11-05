@@ -1,0 +1,58 @@
+
+
+enable
+configure terminal
+
+hostname SW-F0-B2
+line console 0
+ password 1234
+ login
+ exit
+
+enable secret 1234
+service password-encryption
+banner motd #ka3-elhamour#
+
+
+ip domain-name lab.local
+crypto key generate rsa general-keys modulus 1024
+ip ssh version 2
+username abdallah secret 1234
+
+line vty 0 15
+ login local
+ transport input ssh
+ exit
+
+interface range fastEthernet 0/1-6 , fastEthernet 12
+ switchport mode access
+ switchport port-security
+ switchport port-security maximum 4
+ switchport port-security mac-address sticky
+ switchport port-security violation restrict
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ exit
+
+vlan 999
+ name BlackHole
+ exit
+
+interface range fastEthernet 0/7-11 , fastEthernet 0/13-20 , , fastEthernet 0/23-24
+ switchport mode access
+ switchport access vlan 999
+ shutdown
+ exit
+
+vlan 300
+ name Native
+ exit
+
+interface range fastEthernet 0/21-22 
+ switchport mode trunk
+ switchport nonegotiate
+ switchport trunk native vlan 300
+ exit
+
+end
+write memory

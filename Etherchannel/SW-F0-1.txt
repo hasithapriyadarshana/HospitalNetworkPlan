@@ -1,0 +1,5 @@
+en
+conf t
+int range f0/21-22
+channel-group 2 mode active
+sw mode tr

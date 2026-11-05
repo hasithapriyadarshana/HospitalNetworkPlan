@@ -1,0 +1,5 @@
+en
+conf t
+int range f0/18-19
+channel-group 1 mode active
+sw mode tr

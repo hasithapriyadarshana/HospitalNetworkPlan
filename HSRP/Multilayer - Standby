@@ -1,0 +1,55 @@
+enable
+conf t
+
+interface vlan 10
+ standby 10 ip 192.168.10.254
+
+interface vlan 20
+ standby 20 ip 192.168.20.254
+
+interface vlan 30
+ standby 30 ip 192.168.30.254
+
+interface vlan 40
+ standby 40 ip 192.168.40.254
+
+interface vlan 50
+ standby 50 ip 192.168.50.254
+
+interface vlan 60
+ standby 60 ip 192.168.60.254
+
+interface vlan 70
+ standby 70 ip 192.168.70.254
+
+interface vlan 80
+ standby 80 ip 192.168.80.254
+
+interface vlan 90
+ standby 90 ip 192.168.90.254
+
+interface vlan 100
+ standby 100 ip 192.168.100.254
+
+interface vlan 110
+ standby 110 ip 192.168.110.254
+
+interface vlan 120
+ standby 120 ip 192.168.120.254
+
+interface vlan 130
+ standby 130 ip 192.168.130.254
+
+interface vlan 140
+ standby 140 ip 192.168.140.254
+
+interface vlan 160
+ standby 160 ip 192.168.160.254
+
+interface vlan 170
+ standby 170 ip 192.168.170.254
+
+interface vlan 180
+ standby 180 ip 192.168.180.254
+
+end

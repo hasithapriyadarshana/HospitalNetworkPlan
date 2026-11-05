@@ -1,0 +1,89 @@
+enable
+conf t
+
+interface vlan 10
+ standby 10 ip 192.168.10.254
+ standby 10 priority 150
+ standby 10 preempt
+
+interface vlan 20
+ standby 20 ip 192.168.20.254
+ standby 20 priority 150
+ standby 20 preempt
+
+interface vlan 30
+ standby 30 ip 192.168.30.254
+ standby 30 priority 150
+ standby 30 preempt
+
+interface vlan 40
+ standby 40 ip 192.168.40.254
+ standby 40 priority 150
+ standby 40 preempt
+
+interface vlan 50
+ standby 50 ip 192.168.50.254
+ standby 50 priority 150
+ standby 50 preempt
+
+interface vlan 60
+ standby 60 ip 192.168.60.254
+ standby 60 priority 150
+ standby 60 preempt
+
+interface vlan 70
+ standby 70 ip 192.168.70.254
+ standby 70 priority 150
+ standby 70 preempt
+
+ interface vlan 80
+ standby 80 ip 192.168.80.254
+ standby 80 priority 150
+ standby 80 preempt
+
+interface vlan 90
+ standby 90 ip 192.168.90.254
+ standby 90 priority 150
+ standby 90 preempt
+
+interface vlan 100
+ standby 100 ip 192.168.100.254
+ standby 100 priority 150
+ standby 100 preempt
+
+interface vlan 110
+ standby 110 ip 192.168.110.254
+ standby 110 priority 150
+ standby 110 preempt
+
+interface vlan 120
+ standby 120 ip 192.168.120.254
+ standby 120 priority 150
+ standby 120 preempt
+
+interface vlan 130
+ standby 130 ip 192.168.130.254
+ standby 130 priority 150
+ standby 130 preempt
+
+interface vlan 140
+ standby 140 ip 192.168.140.254
+ standby 140 priority 150
+ standby 140 preempt
+
+interface vlan 160
+ standby 160 ip 192.168.160.254
+ standby 160 priority 150
+ standby 160 preempt
+
+interface vlan 170
+ standby 170 ip 192.168.170.254
+ standby 170 priority 150
+ standby 170 preempt
+
+interface vlan 180
+ standby 180 ip 192.168.180.254
+ standby 180 priority 150
+ standby 180 preempt
+
+end

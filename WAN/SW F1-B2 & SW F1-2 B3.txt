@@ -1,0 +1,4 @@
+en
+conf t
+int f0/3
+sw mode tr

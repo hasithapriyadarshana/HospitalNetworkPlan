@@ -1,0 +1,53 @@
+en 
+conf t
+Vlan 10
+name REC 
+VLAN 20
+Name IT
+Vlan 30
+Name sec 
+Vlan 40 
+Name Hr
+Vlan 50
+Name Ad
+Vlan 60  
+Name Ar
+Vlan 70
+Name MT
+VLAN 150
+Name IP
+VLAN 80
+Name EM
+VLAN 90
+Name X-Ray
+VLAN 100
+Name Doc
+VLAN 110
+Name Lab
+VLAN 120
+Name ICU
+VLAN 130
+Name OP
+VLAN 140
+Name Nur
+Vlan 160
+Name PHA 
+Vlan 170
+Name pt
+vlan 180
+name server
+
+int range f0/8-9
+switchport mode access
+switchport access vlan 60
+
+int f0/10
+switchport mode access
+switchport access vlan 70
+
+
+
+end
+
+
+ 

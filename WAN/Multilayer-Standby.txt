@@ -1,0 +1,22 @@
+en
+conf t
+int vlan 1
+ip add 192.168.1.10 255.255.255.0
+no sh
+standby 1 ip 192.168.1.254 
+ip helper-address 192.168.180.3
+router ospf 1
+network 192.168.1.0 0.0.0.255 area 0
+
+
+sw-f2- B1,2,3
+en
+conf t
+int range f0/1-2
+sw mode tr
+
+sw-f2- B4
+en
+conf t
+int range f0/4-5
+sw mode tr

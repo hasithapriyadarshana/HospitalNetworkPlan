@@ -1,0 +1,55 @@
+en
+conf t
+
+int vlan 10
+ ip helper-address 192.168.180.3
+
+int vlan 20
+ ip helper-address 192.168.180.3
+
+int vlan 30
+ ip helper-address 192.168.180.3
+
+int vlan 40
+ ip helper-address 192.168.180.3
+
+int vlan 50
+ ip helper-address 192.168.180.3
+
+int vlan 60
+ ip helper-address 192.168.180.3
+
+int vlan 70
+ ip helper-address 192.168.180.3
+
+int vlan 80
+ ip helper-address 192.168.180.3
+
+int vlan 90
+ ip helper-address 192.168.180.3
+
+int vlan 100
+ ip helper-address 192.168.180.3
+
+int vlan 110
+ ip helper-address 192.168.180.3
+
+int vlan 120
+ ip helper-address 192.168.180.3
+
+int vlan 130
+ ip helper-address 192.168.180.3
+
+int vlan 140
+ ip helper-address 192.168.180.3
+
+int vlan 160
+ ip helper-address 192.168.180.3
+
+int vlan 170
+ ip helper-address 192.168.180.3
+
+int vlan 180
+ ip helper-address 192.168.180.3
+
+end
